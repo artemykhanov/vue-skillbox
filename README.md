@@ -1,4 +1,4 @@
-# skillbox2
+# vue skillbox
 
 ## Project setup
 ```
