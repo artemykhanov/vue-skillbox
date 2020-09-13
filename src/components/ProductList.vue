@@ -1,7 +1,7 @@
 <template>
   <ul class="catalog__list">
-    <ProductItem :product="product" :key="index"
-                 v-for="(product, index) in products"></ProductItem>
+    <ProductItem :product="product" :key="product.id"
+                 v-for="product in products"></ProductItem>
   </ul>
 </template>
 
