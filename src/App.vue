@@ -5,14 +5,15 @@
         Каталог
       </h1>
       <span class="content__info">
-        152 товара
+        {{ countProducts }} товара
       </span>
     </div>
 
     <div class="content__catalog">
       <ProductFilter :price-from.sync="filterPriceFrom"
                      :price-to.sync="filterPriceTo"
-                     :category-id.sync="filterCategoryId"></ProductFilter>
+                     :category-id.sync="filterCategoryId"
+                     :color.sync="filterColor"></ProductFilter>
 
       <section class="catalog">
         <ProductList :products="products"/>
@@ -38,6 +39,7 @@ export default {
       filterPriceFrom: 0,
       filterPriceTo: 0,
       filterCategoryId: 0,
+      filterColor: '',
       page: 1,
       productsPerPage: 3,
     };
@@ -59,6 +61,12 @@ export default {
       if (this.filterCategoryId) {
         filteredProducts = filteredProducts.filter(
           (product) => product.categoryId === this.filterCategoryId,
+        );
+      }
+
+      if (this.filterColor) {
+        filteredProducts = filteredProducts.filter(
+          (product) => product.colors.includes(this.filterColor),
         );
       }
 

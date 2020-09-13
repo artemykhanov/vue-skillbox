@@ -4,6 +4,7 @@ export default [
     categoryId: 1,
     title: 'Значок Ван Гог',
     price: 500,
+    colors: ['#FFBE15'],
     image: 'img/znachok_van_gog.jpg',
   },
   {
@@ -11,6 +12,7 @@ export default [
     categoryId: 1,
     title: 'Футболка с автобусом',
     price: 1299,
+    colors: ['#73B6EA', '#8BE000'],
     image: 'img/tshirt.png',
   },
   {
@@ -18,6 +20,7 @@ export default [
     categoryId: 2,
     title: 'Фигурка Рука',
     price: 760,
+    colors: ['#FFBE15', '#000'],
     image: 'img/hand.jpg',
   },
   {
@@ -25,6 +28,7 @@ export default [
     categoryId: 1,
     title: 'Футболка Кусь',
     price: 1500,
+    colors: ['#000', '#F5F5F5'],
     image: 'img/kus.jpg',
   },
   {
@@ -32,6 +36,7 @@ export default [
     categoryId: 5,
     title: 'Пиво Seaman',
     price: 120,
+    colors: ['#FFBE15'],
     image: 'img/beer.png',
   },
   {
@@ -39,6 +44,7 @@ export default [
     categoryId: 3,
     title: 'Блендер погружной',
     price: 4699,
+    colors: ['#000', '#939393', '#F5F5F5', '#73B6EA'],
     image: 'img/blender.jpg',
   },
   {
@@ -46,6 +52,7 @@ export default [
     categoryId: 4,
     title: 'Бойня №5. Курт Воннегут',
     price: 346,
+    colors: ['#FFBE15'],
     image: 'img/book-5.jpg',
   },
   {
@@ -53,6 +60,7 @@ export default [
     categoryId: 2,
     title: 'Фигурка декоративная',
     price: 455,
+    colors: ['#000', '#F5F5F5', '#FF6B00'],
     image: 'img/figure.jpg',
   },
   {
@@ -60,6 +68,7 @@ export default [
     categoryId: 6,
     title: 'Playstation 5',
     price: 49999,
+    colors: ['#000', '#F5F5F5'],
     image: 'img/playstation_5.jpg',
   },
   {
@@ -67,6 +76,7 @@ export default [
     categoryId: 2,
     title: 'Настенное украшение',
     price: 399,
+    colors: ['#000', '#8BE000'],
     image: 'img/wall-decoration.jpg',
   },
 ];
